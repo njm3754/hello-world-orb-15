@@ -7,7 +7,7 @@ parameters:
     type: string
     default: "World"
     description: "Hello to whom?"
-    test:
+  test:
     type: string
     default: "Test"
 steps:
