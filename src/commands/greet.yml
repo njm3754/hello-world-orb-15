@@ -13,4 +13,5 @@ parameters:
 steps:
   - run:
       name: Hello Greeting
-      command: <<include(scripts/greet.sh)>>
+      command: |
+        echo Hello "<< parameters.to >>" " << parameters.test >>"
