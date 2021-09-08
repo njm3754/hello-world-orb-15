@@ -7,9 +7,10 @@ parameters:
     type: string
     default: "World"
     description: "Hello to whom?"
+    test:
+    type: string
+    default: "Test"
 steps:
   - run:
-      environment:
-        PARAM_TO: <<parameters.to>>
       name: Hello Greeting
       command: <<include(scripts/greet.sh)>>
