@@ -13,5 +13,5 @@ parameters:
 steps:
   - run:
       name: Hello Greeting
-      command: | 
+      command: |
         echo Hello "<< parameters.to >>" " << parameters.test >>"
